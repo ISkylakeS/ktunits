@@ -33,5 +33,11 @@ val p = project {
     assemble {
         jar {
         }
+        mavenJars {
+        }
+    }
+
+    bintray {
+        publish = true
     }
 }
