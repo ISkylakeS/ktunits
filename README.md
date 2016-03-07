@@ -8,3 +8,9 @@ fun main(args: Array<String>) {
   println("100 min is $m ms")
 }
 ```
+
+## Download
+
+```Kotlin
+compile("me.sargunvohra.lib:KtUnits:<version>")
+```
