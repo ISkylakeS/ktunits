@@ -15,5 +15,7 @@ fun main(args: Array<String>) {
 ## Download
 
 ```Kotlin
-compile("me.sargunvohra.lib:KtUnits:<version>")
+dependencies {
+  compile("me.sargunvohra.lib:KtUnits:<version>")
+}
 ```
