@@ -2,7 +2,9 @@ package me.sargunvohra.lib.ktunits
 
 val Long.nanoseconds: TimeValue get() = TimeValue(this)
 
-val Long.milliseconds: TimeValue get() = (this * 1000000).nanoseconds
+val Long.microseconds: TimeValue get() = (this * 1000).nanoseconds
+
+val Long.milliseconds: TimeValue get() = (this * 1000).microseconds
 
 val Long.seconds: TimeValue get() = (this * 1000).milliseconds
 
@@ -13,6 +15,8 @@ val Long.hours: TimeValue get() = (this * 60).minutes
 val Long.days: TimeValue get() = (this * 24).hours
 
 val Int.nanoseconds: TimeValue get() = toLong().nanoseconds
+
+val Int.microseconds: TimeValue get() = toLong().microseconds
 
 val Int.milliseconds: TimeValue get() = toLong().milliseconds
 
@@ -26,7 +30,8 @@ val Int.days: TimeValue get() = toLong().days
 
 data class TimeValue internal constructor(internal val ns: Long) {
     val toNanoseconds = ns
-    val toMilliseconds = toNanoseconds / 1000000
+	val toMicroseconds = toNanoseconds / 1000
+    val toMilliseconds = toMicroseconds / 1000
     val toSeconds = toMilliseconds / 1000
     val toMinutes = toSeconds / 60
     val toHours = toMinutes / 60
