@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/sargunster/KtUnits.svg?branch=master)](https://travis-ci.org/sargunster/KtUnits)
-[![Download](https://api.bintray.com/packages/sargunster/maven/KtUnits/images/download.svg) ](https://bintray.com/sargunster/maven/KtUnits/_latestVersion)
+[![Build Status](https://travis-ci.org/sargunster/ktunits.svg?branch=master)](https://travis-ci.org/sargunster/ktunits)
+[![Download](https://api.bintray.com/packages/sargunster/maven/ktunits/images/download.svg) ](https://bintray.com/sargunster/maven/ktunits/_latestVersion)
 
 # KtUnits
 
@@ -41,8 +41,8 @@ The library currently supports time (from nanoseconds to days) and memory (from 
 
 Just put this in your `build.gradle` or `Build.kt`. Replace `<version>` with the version shown in the badge at the top of this `README.md`.
 
-```Kotlin
+```kotlin
 dependencies {
-  compile("me.sargunvohra.lib:KtUnits:<version>")
+  compile("me.sargunvohra.lib:ktunits:1.1.1")
 }
 ```
