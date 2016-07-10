@@ -30,7 +30,7 @@ val Int.days: TimeValue get() = toLong().days
 
 data class TimeValue internal constructor(internal val ns: Long) {
     val toNanoseconds = ns
-	val toMicroseconds = toNanoseconds / 1000
+    val toMicroseconds = toNanoseconds / 1000
     val toMilliseconds = toMicroseconds / 1000
     val toSeconds = toMilliseconds / 1000
     val toMinutes = toSeconds / 60
