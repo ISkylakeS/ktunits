@@ -43,6 +43,6 @@ Just put this in your `build.gradle` or `Build.kt`. Replace `<version>` with the
 
 ```kotlin
 dependencies {
-  compile("me.sargunvohra.lib:ktunits:1.1.1")
+  compile("me.sargunvohra.lib:ktunits:1.1.2")
 }
 ```

@@ -7,7 +7,7 @@ val p = project {
     name = "ktunits"
     group = "me.sargunvohra.lib"
     artifactId = name
-    version = "1.1.1"
+    version = "1.1.2"
 
     dependencies {
     	compile("org.jetbrains.kotlin:kotlin-stdlib:1.0.3")
